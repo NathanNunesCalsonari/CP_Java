@@ -1,4 +1,4 @@
-# Use uma imagem base do Ubuntu para construção
+# Estágio de Build
 FROM ubuntu:latest AS build
 
 # Atualize o repositório e instale o JDK e Maven
@@ -14,17 +14,5 @@ COPY src ./src
 # Execute a construção do Maven ignorando os testes
 RUN mvn clean install -DskipTests
 
-# Use uma imagem base mais leve para executar o aplicativo
-FROM openjdk:17-jdk-slim
-
-# Expor a porta 8080 (ajuste se sua aplicação usa uma porta diferente)
-EXPOSE 8080
-
-# Defina o diretório de trabalho
-WORKDIR /app
-
-# Copie o arquivo JAR gerado para a imagem final
-COPY --from=build /app/target/lojadebrinquedo.jar app.jar
-
-# Comando para executar o aplicativo
-ENTRYPOINT ["java", "-jar", "app.jar"]
+# Liste o conteúdo da pasta target para verificação
+RUN ls -l /app/target/
