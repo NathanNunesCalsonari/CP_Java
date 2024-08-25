@@ -1,12 +1,5 @@
 # Loja de Brinquedo 2024
 
-# Link do Site
-
-https://cp-java2.onrender.com/brinquedos/listar
-
-![image](https://github.com/user-attachments/assets/8414260b-bc17-472f-a389-ddfb581286c2)
-
-
 # Visão Geral do Projeto
 O projeto é uma aplicação para gerenciar uma loja de brinquedos. O objetivo é permitir a criação, leitura, atualização e exclusão de informações sobre brinquedos em um sistema centralizado. Este sistema pode ser utilizado por funcionários da loja para gerenciar o inventário de brinquedos, bem como por outras partes interessadas para interagir com as informações de forma programática.
 
@@ -14,7 +7,12 @@ O projeto é uma aplicação para gerenciar uma loja de brinquedos. O objetivo �
 ## Gerenciamento de Brinquedos:
 
 CRUD de Brinquedos: Permite criar, ler, atualizar e deletar brinquedos. Cada brinquedo possui atributos como nome, tipo, classificação, tamanho e preço.
-Integração com Frontend:
+
+# Link do Site
+
+https://cp-java2.onrender.com/brinquedos/listar
+
+![image](https://github.com/user-attachments/assets/8414260b-bc17-472f-a389-ddfb581286c2)
 
 
 ## Validação de Dados: 
