@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title th:text="${titulo}">Formulário de Brinquedo</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<div class="form-container">
+    <h1 th:text="${titulo}">Formulário de Brinquedo</h1>
+    <form th:action="@{/brinquedos/salvar}" th:object="${brinquedo}" method="post">
+        <input type="hidden" th:field="*{id}" />
+
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" th:field="*{nome}" /><br/>
+
+        <label for="tipo">Tipo:</label>
+        <input type="text" id="tipo" th:field="*{tipo}" /><br/>
+
+        <label for="classificacao">Classificação:</label>
+        <input type="text" id="classificacao" th:field="*{classificacao}" /><br/>
+
+        <label for="tamanho">Tamanho:</label>
+        <input type="text" id="tamanho" th:field="*{tamanho}" /><br/>
+
+        <label for="preco">Preço:</label>
+        <input type="text" id="preco" th:field="*{preco}" /><br/>
+
+        <button type="submit">Salvar</button>
+    </form>
+    <br>
+    <a href="/brinquedos/listar" class="btn btn-cancel">Voltar para a Lista</a>
+</div>
+</body>
+</html>

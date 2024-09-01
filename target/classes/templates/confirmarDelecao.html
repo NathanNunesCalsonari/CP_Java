@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmar Deleção</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+<div class="container">
+    <h1>Tem certeza que deseja deletar o brinquedo <span th:text="${brinquedo.nome}"></span>?</h1>
+    <form th:action="@{/brinquedos/deletar/{id}(id=${brinquedo.id})}" method="post">
+        <button type="submit" class="btn btn-danger">Sim</button>
+    </form>
+    <a href="/brinquedos/listar" class="btn btn-cancel">Cancelar</a>
+</div>
+</body>
+</html>
