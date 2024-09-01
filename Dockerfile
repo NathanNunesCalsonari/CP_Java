@@ -1,5 +1,8 @@
-# Estágio de Construção
-FROM maven:3.8.6-openjdk-17 AS build
+FROM openjdk:17-jdk AS build
+
+# Instalar Maven
+RUN apt-get update && \
+    apt-get install -y maven
 
 # Defina o diretório de trabalho
 WORKDIR /app
