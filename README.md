@@ -9,11 +9,9 @@ O projeto é uma aplicação para gerenciar uma loja de brinquedos. O objetivo �
 CRUD de Brinquedos: Permite criar, ler, atualizar e deletar brinquedos. Cada brinquedo possui atributos como nome, tipo, classificação, tamanho e preço.
 
 # Link do Site
+https://cp-javass.onrender.com/brinquedos/listar
 
-https://cp-java2.onrender.com/brinquedos/listar
-
-![image](https://github.com/user-attachments/assets/8414260b-bc17-472f-a389-ddfb581286c2)
-
+![image](https://github.com/user-attachments/assets/914e067d-8860-4f98-b1a5-8b98a280a4b4)
 
 ## Validação de Dados: 
 O uso de anotações de validação no BrinquedoDTO garante que os dados recebidos estão no formato correto e atendem às regras de negócio.
